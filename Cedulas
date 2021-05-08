@@ -1,0 +1,37 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		int cedula1 = 100, cedula2 = 50, cedula3 = 20, cedula4 = 10, cedula5 = 5; 
+		int cedula6 = 2, cedula7 = 1; 
+		int	N = sc.nextInt();
+		System.out.println(N);
+		int QtdeCedulas_100 = (N / cedula1);
+		int resto = (N % cedula1);
+		System.out.printf("%d nota(s) de R$ 100,00%n", QtdeCedulas_100);
+		int QtdeCedulas_50 = (resto / cedula2);
+		resto = (resto % cedula2);
+		System.out.printf("%d nota(s) de R$ 50,00%n", QtdeCedulas_50);
+		int QtdeCedulas_20 = (resto / cedula3);
+		resto = (resto % cedula3);
+		System.out.printf("%d nota(s) de R$ 20,00%n", QtdeCedulas_20);
+		int QtdeCedulas_10 = (resto / cedula4);
+		resto = (resto % cedula4);
+		System.out.printf("%d nota(s) de R$ 10,00%n", QtdeCedulas_10);
+		int QtdeCedulas_5 = (resto / cedula5);
+		resto = (resto % cedula5);
+		System.out.printf("%d nota(s) de R$ 5,00%n", QtdeCedulas_5);
+		int QtdeCedulas_2 = (resto / cedula6);
+		resto = (resto % cedula6);
+		System.out.printf("%d nota(s) de R$ 2,00%n", QtdeCedulas_2);
+		int QtdeCedulas_1 = (resto / cedula7);
+		resto = (resto % cedula7);
+		System.out.printf("%d nota(s) de R$ 1,00%n", QtdeCedulas_1);
+		sc.close();
+	}
+
+}
