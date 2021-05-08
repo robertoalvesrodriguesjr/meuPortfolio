@@ -1,0 +1,21 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		int idadeEmDias = sc.nextInt();
+		int anos = (idadeEmDias / 365);
+		int resto = (idadeEmDias % 365);
+		System.out.printf("%d ano(s)%n", anos);
+		int meses = (resto / 30);
+		resto = (resto % 30);
+		System.out.printf("%d mes(es)%n", meses);
+		int dias = (resto);
+		System.out.printf("%d dia(s)%n", dias);
+		sc.close();
+	}
+
+}
