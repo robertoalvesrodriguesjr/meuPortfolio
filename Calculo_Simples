@@ -1,0 +1,18 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in); 
+		int codigoPeca1 = sc.nextInt(); int numeroDePecas1 = sc.nextInt(); double valorUnitarioPeca1 = sc.nextDouble();
+		int codigoPeca2 = sc.nextInt(); int numeroDePecas2 = sc.nextInt(); double valorUnitarioPeca2 = sc.nextDouble();
+		double valorASerPago =  numeroDePecas1 * valorUnitarioPeca1 + numeroDePecas2 * valorUnitarioPeca2; 
+		System.out.printf("VALOR A PAGAR: R$ %.2f%n",valorASerPago);
+		
+		sc.close();
+
+	}
+
+}
